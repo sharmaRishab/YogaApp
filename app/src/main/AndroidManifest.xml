@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.yogaapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo3"
+        android:label="Yoga"
+        android:roundIcon="@drawable/image"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YogaApp">
+        <activity
+            android:name=".MainActivity11"
+            android:parentActivityName=".MainActivity10"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity10"
+            android:exported="false"
+            android:label="Subscriptions"
+            android:parentActivityName=".MainActivity9" />
+        <activity
+            android:name=".MainActivity9"
+            android:exported="false"
+            android:label="BMI"
+            android:parentActivityName=".MainActivity8" />
+        <activity
+            android:name=".MainActivity8"
+            android:exported="false"
+            android:label="My List"
+            android:parentActivityName=".MainActivity7" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="false"
+            android:parentActivityName=".MainActivity6" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="false"
+            android:parentActivityName=".MainActivity5" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="false"
+            android:parentActivityName=".MainActivity4" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="Mind And Body"
+            android:parentActivityName=".Otp" />
+        <activity
+            android:name=".Otp"
+            android:exported="true"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
